@@ -27,6 +27,8 @@
     "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.9.6",
     "@babel/register": "^7.9.0",
+    "@types/chai": "^4.2.11",
+    "@types/mocha": "^7.0.2",
     "babel-eslint": "^10.1.0",
     "babel-plugin-add-module-exports": "^1.0.2",
     "babelify": "^10.0.0",
@@ -46,10 +48,11 @@
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
     "jsdoc-to-markdown": "^5.0.3",
+    "typescript": "^3.9.3",
     "vinyl-source-stream": "^2.0.0"
   },
   "scripts": {
-    "build": "gulp",
+    "build": "gulp && tsc",
     "docs": "gulp docs",
     "test": "gulp test"
   }
