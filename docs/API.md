@@ -103,7 +103,6 @@ Function's name start or end with "_" will not be able to apply middleware.
 <a name="new_MiddlewareManager+MiddlewareManager_new"></a>
 
 #### new exports.MiddlewareManager(target, ...middlewareObjects)
-**Returns**: <code>object</code> - this  
 
 | Param | Type | Description |
 | --- | --- | --- |
