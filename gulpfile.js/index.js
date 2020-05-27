@@ -7,6 +7,6 @@ const { lint } = require('./lint')
 const { server } = require('./server')
 const { test } = require('./test')
 
-exports.docs = docs
+exports.docs = series(docs, server)
 exports.test = test
-exports.default = series(clean, lint, build, mini, docs, server)
+exports.default = series(clean, lint, build, mini, docs)

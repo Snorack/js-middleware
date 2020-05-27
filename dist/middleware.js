@@ -229,7 +229,6 @@ var MiddlewareManager = /*#__PURE__*/function () {
   /**
    * @param {object} target The target object.
    * @param {...object} middlewareObjects Middleware objects.
-   * @return {object} this
    */
   function MiddlewareManager(target) {
     var _instance;
@@ -298,7 +297,7 @@ var MiddlewareManager = /*#__PURE__*/function () {
      *
      * @param {string|object|null} methodName String for target function name, object for a middleware object,
      * null will apply the middlewares to all methods on the target.
-     * @param {...function|...object} middlewares The middleware chain to be applied.
+     * @param {...function|object} middlewares The middleware chain to be applied.
      * @return {object} this
      */
 
